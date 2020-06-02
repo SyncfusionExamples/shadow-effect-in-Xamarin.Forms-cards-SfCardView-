@@ -20,7 +20,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <cards:SfCardView Margin="10" SwipeToDismiss="True" HasShadow="True" ShadowColor="Red">
+                        <cards:SfCardView Margin="10" SwipeToDismiss="True" HasShadow="True" ShadowColor="LightBlue">
                             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                 <StackLayout Orientation="Horizontal" >
                                     <Image Margin="10,0,0,0" Source="{Binding Image}"/>

@@ -148,6 +148,6 @@
     <BundleResource Include="Resources\InstagramFill.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\WhatsappFill.png" />
+    <BundleResource Include="Resources\WhatsAppFill.png" />
   </ItemGroup>
 </Project>

@@ -11,10 +11,10 @@ namespace Cards_Shadow
         {
             Items = new CardModel[]
             {
-                new CardModel(){ Title = "FaceBook" , Image = "FacebookFill.png"},
+                new CardModel(){ Title = "Facebook" , Image = "FacebookFill.png"},
                 new CardModel(){ Title = "Gmail" , Image = "GmailFill.png"},
                 new CardModel(){ Title = "Instagram" , Image = "InstagramFill.png"},
-                new CardModel(){ Title = "Whatsapp" , Image = "WhatsappFill.png"},
+                new CardModel(){ Title = "WhatsApp" , Image = "WhatsAppFill.png"},
             };
         }
     }
