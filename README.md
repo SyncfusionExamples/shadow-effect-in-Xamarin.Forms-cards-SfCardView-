@@ -1,79 +1,57 @@
-# shadow-effect-in-Xamarin.Forms-cards-SfCardView
+# Shadow effect in Xamarin.Forms cards SfCardView
 
-This section explains how to add shadow effect for cards in Xamarin.Forms CardView. For more reference, please refer the below KB
+This repository contains sample to add shadow effect for cards in [Syncfusion Xamarin.Forms Card View](https://help.syncfusion.com/xamarin/cards/getting-started) control.
 
-[How to set shadow effect to the cards in Xamarin.Forms](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
-
-It has been achieved by enabling the HasShadow property in CardView. Also, you can customize the shadow effect color by customizing ShadowColor property in CardView.
-
-Consider the use case to show the list of social applications and each item that is considered as a shadow effect card. UI was conceived as per the code snippet below
-
-**[XAML]**
-
-```
-
-      <ListView   x:Name="EventListView"
-                  RowHeight="100"
-                  ItemsSource="{Binding Items}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <cards:SfCardView   Margin="10" HasShadow="True" ShadowColor="LightBlue">
-                            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                                <StackLayout Orientation="Horizontal" >
-                                    <Image Margin="10,0,0,0" Source="{Binding Image}"/>
-                                    <Label Margin="0,10,5,0"
-                                           FontAttributes="Bold"
-                                           FontSize="16"
-                                           MaxLines="1"
-                                           Text="{Binding Title}"
-                                           LineBreakMode="NoWrap"
-                                           TextColor="Black"
-                                           HorizontalOptions="Start"
-                                           VerticalOptions="Center" />
-                                </StackLayout>
-                            </Grid>
-                        </cards:SfCardView>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-```
-**[C#]**
-
-```
-public class CardModel
-{
-    public string Title {get; set;}
-
-    public string Image {get; set;}
-}
-```
-
-**[C#]**
-
-```
-public class CardViewModel
-{
-   public IEnumerable<CardModel> Items { get; set; }
-
-        public CardViewModel()
-        {
-            Items = new CardModel[]
-            {
-                new CardModel(){ Title = "Facebook" , Image = "FacebookFill.png"},
-                new CardModel(){ Title = "Gmail" , Image = "GmailFill.png"},
-                new CardModel(){ Title = "Instagram" , Image = "InstagramFill.png"},
-                new CardModel(){ Title = "WhatsApp" , Image = "WhatsAppFill.png"},
-            };
-        }
-}
-
-```
 **Shadow card support is only available in iOS and Android platforms**
 
-Also refer our [feature tour page](https://www.syncfusion.com/xamarin-ui-controls/xamarin-cards) to know more features available in our button.
+Please refer the KB through this [link](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms).
+
+## Syncfusion controls:
+
+This project used the following Syncfusion control(s):
+* [SfCardView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-cards)
+
+## Supported platforms
+
+| Platforms | Supported versions |
+| --------- | ------------------ |
+| Android   | API level 21 and later versions |
+| iOS | iOS 9.0 and later versions |
+| UWP | Windows 10 devices |
+
+## Requirements to run the sample
+
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
+
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin/system-requirements)
+
+## How to run the sample
+
+1. Clone the sample and open it in Visual Studio.
+
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.xaml.cs file as demonstrated in the following code.
+
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+	
+			InitializeComponent();
+	
+			MainPage = new App1.MainPage();
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin/licensing/overview) for more details.
+	
+3. Clean and build the application.
+
+4. Run the application.
+
+## License
+
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
 
 # Troubleshooting
 ## Path too long exception
