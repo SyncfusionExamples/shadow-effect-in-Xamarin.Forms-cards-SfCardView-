@@ -1,6 +1,6 @@
 # Shadow effect in Xamarin.Forms cards SfCardView
 
-This repository contains sample for how to add shadow effect for cards in [Syncfusion Xamarin.Forms Card View](https://help.syncfusion.com/xamarin/cards/getting-started) control.
+This repository contains sample to add shadow effect for cards in [Syncfusion Xamarin.Forms Card View](https://help.syncfusion.com/xamarin/cards/getting-started) control.
 
 **Shadow card support is only available in iOS and Android platforms**
 
